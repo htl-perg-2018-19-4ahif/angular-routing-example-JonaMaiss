@@ -1,3 +1,5 @@
-<button (click)="getPokemons()">Get Pokemon</button>
+<ul *ngFor='let pokemon of pokelist'>
+  <li>{{pokemon.name}}</li>
+</ul>
 
 <router-outlet></router-outlet>
